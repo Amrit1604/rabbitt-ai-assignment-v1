@@ -101,37 +101,37 @@ async def send_summary(
         logger.info("Email dispatched to %s", to)
     except Exception as e:
         logger.error("Email delivery failed: %s", e)
-      # Fallback to SendGrid
-      sg_api_key = getattr(settings, "SENDGRID_API_KEY", None)
-      if not sg_api_key:
-        logger.error("SendGrid API key not found in settings. Cannot fallback.")
-        raise EmailError()
+        # Fallback to SendGrid
+        sg_api_key = getattr(settings, "SENDGRID_API_KEY", None)
+        if not sg_api_key:
+            logger.error("SendGrid API key not found in settings. Cannot fallback.")
+            raise EmailError()
 
-      sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
-      from_email = Email(settings.GMAIL_USER)
-      to_email = To(to)
-      subject = "Your Sales Insight Report — Rabbitt AI"
-      content = Content("text/html", _build_html(summary))
-      mail = Mail(from_email, to_email, subject, content)
+        sg = sendgrid.SendGridAPIClient(api_key=sg_api_key)
+        from_email = Email(settings.GMAIL_USER)
+        to_email = To(to)
+        subject = "Your Sales Insight Report — Rabbitt AI"
+        content = Content("text/html", _build_html(summary))
+        mail = Mail(from_email, to_email, subject, content)
 
-      # Attach charts if present
-      if charts:
-        for filename, chart_bytes in charts.items():
-          encoded = base64.b64encode(chart_bytes).decode()
-          attachment = Attachment()
-          attachment.file_content = FileContent(encoded)
-          attachment.file_type = FileType("image/png")
-          attachment.file_name = FileName(filename)
-          attachment.disposition = Disposition("attachment")
-          mail.add_attachment(attachment)
+        # Attach charts if present
+        if charts:
+            for filename, chart_bytes in charts.items():
+                encoded = base64.b64encode(chart_bytes).decode()
+                attachment = Attachment()
+                attachment.file_content = FileContent(encoded)
+                attachment.file_type = FileType("image/png")
+                attachment.file_name = FileName(filename)
+                attachment.disposition = Disposition("attachment")
+                mail.add_attachment(attachment)
 
-      try:
-        response = sg.send(mail)
-        if response.status_code >= 200 and response.status_code < 300:
-          logger.info("SendGrid fallback email dispatched to %s", to)
-        else:
-          logger.error("SendGrid fallback failed: %s", response.body)
-          raise EmailError()
-      except Exception as sg_e:
-        logger.error("SendGrid fallback exception: %s", sg_e)
-        raise EmailError()
+        try:
+            response = sg.send(mail)
+            if response.status_code >= 200 and response.status_code < 300:
+                logger.info("SendGrid fallback email dispatched to %s", to)
+            else:
+                logger.error("SendGrid fallback failed: %s", response.body)
+                raise EmailError()
+        except Exception as sg_e:
+            logger.error("SendGrid fallback exception: %s", sg_e)
+            raise EmailError()
