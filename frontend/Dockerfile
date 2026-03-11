@@ -9,6 +9,8 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+ARG NEXT_PUBLIC_API_URL=http://localhost:8000
+ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
@@ -25,6 +27,7 @@ USER appuser
 # Copy only what Next.js standalone needs
 COPY --from=builder --chown=appuser:appgroup /app/.next/standalone ./
 COPY --from=builder --chown=appuser:appgroup /app/.next/static ./.next/static
+RUN mkdir -p .next/static
 COPY --from=builder --chown=appuser:appgroup /app/public ./public
 
 EXPOSE 3000

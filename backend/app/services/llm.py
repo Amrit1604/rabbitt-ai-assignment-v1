@@ -50,7 +50,7 @@ def generate_summary(stats: dict[str, Any]) -> str:
     # --- Primary: Gemini 1.5 Flash ---
     try:
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
@@ -60,7 +60,7 @@ def generate_summary(stats: dict[str, Any]) -> str:
     try:
         client = Groq(api_key=settings.GROQ_API_KEY)
         chat = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=800,

@@ -19,13 +19,11 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        # Baked into the Next.js bundle at build time
+        NEXT_PUBLIC_API_URL: http://backend:8000
     ports:
       - "3000:3000"
-    env_file:
-      - .env
-    environment:
-      # Override with the internal docker network address
-      NEXT_PUBLIC_API_URL: http://backend:8000
     depends_on:
       backend:
         condition: service_healthy

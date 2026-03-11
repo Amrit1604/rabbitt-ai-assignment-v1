@@ -22,4 +22,5 @@ pydantic[email]==2.10.4
 slowapi==0.1.9
 
 # File type detection (magic bytes)
-python-magic-bin==0.4.14
+# python-magic works on Linux (Docker); Windows devs can use python-magic-bin locally
+python-magic==0.4.27

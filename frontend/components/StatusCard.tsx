@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import type { UploadStatus } from "@/types";
 
 interface Props {
@@ -12,42 +13,86 @@ export default function StatusCard({ status, summary, error }: Props) {
 
   if (status === "loading") {
     return (
-      <div className="mt-6 flex flex-col items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-8">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-brand-highlight" />
-        <p className="text-sm text-white/60">Analyzing your data and generating summary…</p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="mt-6 flex flex-col items-center gap-4 rounded-2xl border border-border bg-muted p-8 text-center"
+      >
+        <div className="relative h-10 w-10">
+          <div className="absolute inset-0 rounded-full border-2 border-border" />
+          <div className="absolute inset-0 animate-spin rounded-full border-2 border-transparent border-t-accent" />
+        </div>
+        <div>
+          <p className="text-sm font-medium text-foreground">Analysing your data…</p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Gemini is generating your executive summary
+          </p>
+        </div>
+      </motion.div>
     );
   }
 
   if (status === "error") {
     return (
-      <div className="mt-6 rounded-xl border border-red-500/30 bg-red-500/10 p-5">
-        <p className="text-sm font-medium text-red-400">Something went wrong</p>
-        <p className="mt-1 text-sm text-white/60">{error ?? "An unexpected error occurred."}</p>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="mt-6 rounded-2xl border border-red-200 bg-red-50 p-5"
+      >
+        <div className="flex items-start gap-3">
+          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-100 text-red-500 text-xs font-bold">
+            !
+          </span>
+          <div>
+            <p className="text-sm font-semibold text-red-700">Analysis failed</p>
+            <p className="mt-1 text-sm text-red-600/80">
+              {error ?? "An unexpected error occurred. Please try again."}
+            </p>
+          </div>
+        </div>
+      </motion.div>
     );
   }
 
   // success
   return (
-    <div className="mt-6 rounded-xl border border-green-500/30 bg-green-500/10 p-5">
-      <div className="mb-3 flex items-center gap-2">
-        <span className="text-green-400">✓</span>
-        <p className="text-sm font-semibold text-green-400">Summary sent to your inbox!</p>
-      </div>
-      {summary && (
-        <div className="mt-3 rounded-lg border border-white/5 bg-black/20 p-4">
-          <p className="mb-1 text-xs font-medium uppercase tracking-wider text-white/40">
-            AI Summary
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="mt-6 overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+    >
+      {/* Gradient top bar */}
+      <div className="gradient-bg h-1 w-full" />
+
+      <div className="p-5">
+        <div className="flex items-center gap-2">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-accent/10 text-accent text-xs font-bold">
+            ✓
+          </span>
+          <p className="text-sm font-semibold text-foreground">
+            Summary sent to your inbox!
           </p>
-          {/* Render each paragraph on its own line */}
-          {summary.split("\n\n").map((para, i) => (
-            <p key={i} className="mt-2 text-sm leading-relaxed text-white/80">
-              {para}
-            </p>
-          ))}
         </div>
-      )}
-    </div>
+
+        {summary && (
+          <div className="mt-4 rounded-xl border border-border bg-muted p-4">
+            <p className="mb-2 font-mono text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
+              AI Summary Preview
+            </p>
+            <div className="space-y-2">
+              {summary.split("\n\n").map((para, i) => (
+                <p key={i} className="text-sm leading-relaxed text-foreground/80">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </motion.div>
   );
 }
+
