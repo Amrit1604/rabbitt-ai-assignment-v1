@@ -1,0 +1,501 @@
+Date,Product_Category,Region,Units_Sold,Unit_Price,Revenue,Status
+2025-10-19,Automotive,Central,84,1516.22,127362.48,Cancelled
+2025-03-01,Home Appliances,West,54,975.25,52663.5,Returned
+2025-09-29,Books,East,155,16.56,2566.8,Delivered
+2025-02-01,Home Appliances,North,85,433.48,36845.8,Returned
+2025-01-24,Sports,East,98,299.64,29364.72,Returned
+2025-02-23,Electronics,West,143,1877.59,268495.37,Pending
+2025-03-03,Sports,West,16,189.96,3039.36,Returned
+2025-03-27,Books,East,46,17.14,788.44,Pending
+2025-02-12,Beauty,South,15,115.4,1731.0,Cancelled
+2025-08-18,Automotive,South,120,1679.04,201484.8,Pending
+2025-05-19,Electronics,East,164,830.07,136131.48,Returned
+2025-04-09,Home Appliances,South,161,1008.17,162315.37,Delivered
+2025-08-31,Electronics,Central,65,1190.28,77368.2,Cancelled
+2025-04-06,Furniture,East,53,369.87,19603.11,Pending
+2025-05-05,Sports,Central,9,127.14,1144.26,Shipped
+2025-04-23,Books,Central,124,65.55,8128.2,Pending
+2025-05-15,Electronics,West,2,1463.89,2927.78,Delivered
+2025-01-14,Sports,North,41,370.88,15206.08,Delivered
+2025-05-23,Books,South,169,56.95,9624.55,Pending
+2025-10-07,Sports,West,119,277.51,33023.69,Delivered
+2025-10-09,Automotive,East,44,1396.94,61465.36,Returned
+2025-06-19,Home Appliances,West,125,480.98,60122.5,Returned
+2025-11-01,Electronics,North,194,1794.13,348061.22,Shipped
+2025-09-07,Electronics,West,187,896.41,167628.67,Pending
+2025-06-26,Books,East,102,62.7,6395.4,Delivered
+2025-04-18,Books,South,86,48.07,4134.02,Returned
+2025-02-12,Furniture,East,63,2262.63,142545.69,Cancelled
+2025-12-27,Automotive,East,161,993.8,160001.8,Returned
+2025-04-03,Automotive,South,37,279.98,10359.26,Returned
+2025-08-03,Home Appliances,South,53,777.59,41212.27,Shipped
+2025-03-13,Beauty,West,117,127.47,14913.99,Delivered
+2025-05-03,Books,East,62,76.42,4738.04,Shipped
+2025-02-28,Sports,Central,185,157.79,29191.15,Delivered
+2025-05-31,Home Appliances,North,14,1251.96,17527.44,Cancelled
+2025-03-29,Sports,South,61,166.03,10127.83,Shipped
+2025-06-23,Automotive,Central,38,1951.73,74165.74,Shipped
+2025-01-14,Clothing,South,191,103.06,19684.46,Cancelled
+2025-07-27,Sports,Central,128,271.12,34703.36,Delivered
+2025-11-29,Sports,West,97,390.4,37868.8,Cancelled
+2025-12-17,Sports,South,158,326.77,51629.66,Delivered
+2025-04-06,Books,North,142,75.17,10674.14,Cancelled
+2025-12-16,Home Appliances,West,163,1282.29,209013.27,Returned
+2025-12-11,Furniture,South,135,1221.06,164843.1,Pending
+2025-01-18,Books,South,41,16.83,690.03,Pending
+2025-11-21,Books,West,151,32.0,4832.0,Delivered
+2025-12-09,Books,South,163,11.0,1793.0,Delivered
+2025-11-22,Electronics,West,25,1612.64,40316.0,Delivered
+2025-02-19,Clothing,South,199,42.03,8363.97,Cancelled
+2025-03-19,Furniture,North,113,751.05,84868.65,Cancelled
+2025-06-08,Sports,East,199,306.69,61031.31,Delivered
+2025-05-28,Books,East,26,27.23,707.98,Delivered
+2025-10-19,Home Appliances,Central,20,552.21,11044.2,Cancelled
+2025-12-19,Clothing,Central,14,97.09,1359.26,Cancelled
+2025-11-07,Electronics,Central,176,1293.72,227694.72,Delivered
+2025-07-09,Home Appliances,North,192,978.65,187900.8,Cancelled
+2025-02-01,Beauty,Central,45,135.09,6079.05,Delivered
+2025-02-21,Clothing,South,32,157.77,5048.64,Pending
+2025-07-24,Sports,North,193,276.99,53459.07,Shipped
+2025-11-13,Home Appliances,North,142,680.82,96676.44,Delivered
+2025-01-30,Home Appliances,West,26,686.95,17860.7,Returned
+2025-01-31,Electronics,West,43,1223.25,52599.75,Cancelled
+2025-03-24,Home Appliances,East,12,595.56,7146.72,Pending
+2025-05-16,Automotive,Central,145,583.46,84601.7,Cancelled
+2025-01-30,Beauty,South,118,149.38,17626.84,Shipped
+2025-03-03,Automotive,South,162,162.83,26378.46,Returned
+2025-05-19,Electronics,North,107,1648.16,176353.12,Cancelled
+2025-09-26,Electronics,Central,30,1215.72,36471.6,Shipped
+2025-03-15,Clothing,West,51,193.09,9847.59,Shipped
+2025-06-27,Home Appliances,North,81,499.87,40489.47,Returned
+2025-10-10,Automotive,Central,109,841.11,91680.99,Returned
+2025-10-23,Electronics,East,66,1249.49,82466.34,Cancelled
+2025-06-27,Clothing,East,72,93.54,6734.88,Cancelled
+2025-12-27,Books,Central,119,78.39,9328.41,Pending
+2025-06-23,Books,South,82,21.82,1789.24,Returned
+2025-08-07,Electronics,East,189,946.92,178967.88,Shipped
+2025-10-21,Beauty,North,18,139.09,2503.62,Returned
+2025-08-10,Sports,South,170,81.38,13834.6,Pending
+2025-11-12,Sports,North,88,328.73,28928.24,Returned
+2025-05-30,Books,East,21,17.83,374.43,Shipped
+2025-11-07,Electronics,South,77,1677.45,129163.65,Cancelled
+2025-04-23,Beauty,South,41,86.3,3538.3,Shipped
+2025-01-03,Beauty,Central,92,89.59,8242.28,Pending
+2025-05-26,Home Appliances,North,48,760.59,36508.32,Returned
+2025-04-29,Clothing,East,168,157.03,26381.04,Delivered
+2025-03-15,Home Appliances,East,143,1264.03,180756.29,Returned
+2025-01-01,Furniture,Central,180,2873.89,517300.2,Shipped
+2025-10-25,Clothing,North,161,137.06,22066.66,Shipped
+2025-07-08,Electronics,South,130,1907.24,247941.2,Shipped
+2025-04-20,Home Appliances,Central,2,1421.99,2843.98,Cancelled
+2025-11-03,Furniture,South,54,2416.37,130483.98,Returned
+2025-07-06,Clothing,East,184,121.9,22429.6,Shipped
+2025-04-01,Beauty,East,45,86.76,3904.2,Delivered
+2025-11-20,Beauty,Central,45,73.17,3292.65,Cancelled
+2025-11-04,Automotive,Central,193,899.86,173672.98,Pending
+2025-10-26,Beauty,West,171,50.64,8659.44,Delivered
+2025-03-31,Books,East,194,58.53,11354.82,Shipped
+2025-02-20,Home Appliances,North,176,416.25,73260.0,Pending
+2025-08-14,Home Appliances,East,180,1266.37,227946.6,Delivered
+2025-06-21,Automotive,South,13,1547.13,20112.69,Pending
+2025-07-06,Furniture,East,74,969.23,71723.02,Pending
+2025-10-22,Books,South,149,45.26,6743.74,Delivered
+2025-10-21,Beauty,East,133,109.96,14624.68,Pending
+2025-09-22,Home Appliances,West,147,604.29,88830.63,Shipped
+2025-08-22,Automotive,East,94,1064.17,100031.98,Pending
+2025-12-23,Beauty,West,28,18.22,510.16,Cancelled
+2025-05-25,Beauty,South,179,53.63,9599.77,Returned
+2025-09-12,Beauty,West,133,25.37,3374.21,Cancelled
+2025-07-20,Beauty,South,20,60.31,1206.2,Shipped
+2025-04-02,Home Appliances,West,90,524.33,47189.7,Shipped
+2025-11-10,Sports,South,79,390.45,30845.55,Delivered
+2025-08-20,Sports,East,117,221.3,25892.1,Cancelled
+2025-10-13,Automotive,East,120,1691.39,202966.8,Returned
+2025-03-28,Home Appliances,South,122,376.03,45875.66,Delivered
+2025-01-16,Automotive,North,157,1497.41,235093.37,Shipped
+2025-08-05,Books,South,100,64.71,6471.0,Shipped
+2025-09-14,Clothing,East,74,74.82,5536.68,Returned
+2025-08-28,Automotive,East,54,102.16,5516.64,Cancelled
+2025-09-11,Electronics,East,145,1207.42,175075.9,Cancelled
+2025-04-02,Furniture,East,2,2350.94,4701.88,Returned
+2025-09-30,Beauty,South,88,139.2,12249.6,Returned
+2025-08-10,Electronics,East,18,1661.82,29912.76,Shipped
+2025-10-03,Furniture,South,181,1243.95,225154.95,Returned
+2025-03-02,Electronics,West,149,1284.12,191333.88,Cancelled
+2025-03-03,Books,South,200,76.76,15352.0,Delivered
+2025-03-22,Beauty,South,138,55.68,7683.84,Pending
+2025-10-14,Automotive,South,60,1228.18,73690.8,Cancelled
+2025-07-07,Beauty,North,137,126.9,17385.3,Shipped
+2025-04-12,Clothing,East,43,119.79,5150.97,Pending
+2025-11-11,Beauty,East,108,82.56,8916.48,Shipped
+2025-09-02,Beauty,Central,122,131.32,16021.04,Delivered
+2025-09-20,Clothing,Central,193,27.63,5332.59,Cancelled
+2025-12-02,Sports,South,4,296.59,1186.36,Pending
+2025-05-20,Electronics,South,63,1639.85,103310.55,Returned
+2025-07-01,Sports,South,162,458.93,74346.66,Returned
+2025-06-07,Furniture,South,122,2418.14,295013.08,Pending
+2025-04-19,Furniture,South,49,2861.03,140190.47,Cancelled
+2025-09-28,Books,North,140,38.56,5398.4,Delivered
+2025-09-27,Furniture,North,156,2189.86,341618.16,Cancelled
+2025-07-02,Books,West,182,72.15,13131.3,Delivered
+2025-03-26,Home Appliances,Central,184,492.93,90699.12,Delivered
+2025-03-18,Furniture,South,194,2327.55,451544.7,Delivered
+2025-02-02,Books,East,137,57.45,7870.65,Pending
+2025-05-03,Furniture,Central,172,451.89,77725.08,Pending
+2025-05-29,Home Appliances,East,15,887.37,13310.55,Pending
+2025-04-02,Home Appliances,North,34,1334.97,45388.98,Returned
+2025-11-28,Beauty,East,79,21.17,1672.43,Pending
+2025-03-20,Beauty,Central,150,15.94,2391.0,Returned
+2025-01-16,Books,West,138,60.56,8357.28,Delivered
+2025-07-18,Sports,South,107,203.79,21805.53,Pending
+2025-10-13,Clothing,Central,161,120.69,19431.09,Pending
+2025-01-18,Home Appliances,Central,124,1370.09,169891.16,Returned
+2025-04-24,Books,East,180,33.76,6076.8,Cancelled
+2025-08-07,Home Appliances,West,183,1358.14,248539.62,Cancelled
+2025-10-08,Clothing,West,191,25.11,4796.01,Shipped
+2025-03-23,Sports,East,135,399.94,53991.9,Returned
+2025-04-26,Sports,East,180,432.64,77875.2,Shipped
+2025-04-17,Electronics,West,59,1855.17,109455.03,Cancelled
+2025-05-14,Electronics,Central,115,1323.68,152223.2,Shipped
+2025-04-05,Furniture,North,182,2853.77,519386.14,Returned
+2025-09-03,Electronics,West,12,826.15,9913.8,Cancelled
+2025-09-28,Beauty,West,137,71.99,9862.63,Delivered
+2025-03-19,Sports,West,68,405.46,27571.28,Returned
+2025-03-06,Clothing,Central,108,72.14,7791.12,Cancelled
+2025-01-26,Home Appliances,West,159,334.09,53120.31,Cancelled
+2025-12-06,Beauty,South,126,133.2,16783.2,Pending
+2025-08-01,Furniture,East,79,2850.85,225217.15,Pending
+2025-06-20,Furniture,Central,32,285.5,9136.0,Cancelled
+2025-06-08,Clothing,North,110,89.72,9869.2,Returned
+2025-03-22,Automotive,West,179,325.08,58189.32,Pending
+2025-06-10,Clothing,South,64,155.73,9966.72,Shipped
+2025-05-06,Furniture,North,105,2287.01,240136.05,Delivered
+2025-06-15,Furniture,Central,38,2749.19,104469.22,Cancelled
+2025-06-17,Books,North,170,28.03,4765.1,Returned
+2025-06-01,Sports,South,109,137.25,14960.25,Shipped
+2025-12-21,Home Appliances,North,107,1253.08,134079.56,Shipped
+2025-05-22,Electronics,East,20,1209.21,24184.2,Returned
+2025-10-10,Sports,West,47,56.83,2671.01,Returned
+2025-11-04,Sports,North,159,246.71,39226.89,Pending
+2025-03-27,Beauty,West,102,130.79,13340.58,Delivered
+2025-08-24,Beauty,North,183,25.76,4714.08,Pending
+2025-10-21,Furniture,South,113,709.54,80178.02,Returned
+2025-12-10,Furniture,East,94,1580.83,148598.02,Returned
+2025-07-24,Sports,East,147,297.94,43797.18,Cancelled
+2025-06-03,Home Appliances,South,114,1261.48,143808.72,Returned
+2025-02-28,Furniture,West,35,1719.66,60188.1,Pending
+2025-12-11,Beauty,Central,147,97.49,14331.03,Shipped
+2025-01-11,Sports,West,35,239.88,8395.8,Delivered
+2025-04-27,Clothing,North,64,48.77,3121.28,Returned
+2025-01-04,Books,Central,143,28.94,4138.42,Pending
+2025-01-06,Furniture,North,184,2959.57,544560.88,Returned
+2025-05-25,Furniture,Central,34,1834.41,62369.94,Cancelled
+2025-02-27,Sports,North,136,256.69,34909.84,Shipped
+2025-02-12,Sports,East,184,275.72,50732.48,Delivered
+2025-08-22,Books,East,34,66.56,2263.04,Shipped
+2025-10-16,Automotive,North,159,766.03,121798.77,Returned
+2025-09-07,Electronics,East,62,1060.01,65720.62,Returned
+2025-01-20,Sports,East,35,353.79,12382.65,Returned
+2025-06-05,Beauty,West,199,109.11,21712.89,Cancelled
+2025-05-31,Clothing,West,83,158.19,13129.77,Pending
+2025-12-08,Automotive,Central,103,1278.08,131642.24,Pending
+2025-06-16,Sports,East,51,328.0,16728.0,Cancelled
+2025-02-03,Sports,East,27,316.09,8534.43,Returned
+2025-05-03,Books,South,82,64.96,5326.72,Cancelled
+2025-12-13,Beauty,North,43,116.87,5025.41,Pending
+2025-12-31,Electronics,West,126,1838.91,231702.66,Pending
+2025-07-01,Electronics,East,67,1366.98,91587.66,Cancelled
+2025-02-08,Automotive,West,43,870.03,37411.29,Shipped
+2025-11-07,Clothing,Central,86,166.57,14325.02,Returned
+2025-12-13,Clothing,North,183,71.83,13144.89,Pending
+2025-11-24,Sports,North,8,379.38,3035.04,Cancelled
+2025-11-29,Sports,South,192,339.27,65139.84,Delivered
+2025-03-03,Furniture,East,109,1571.05,171244.45,Cancelled
+2025-02-19,Furniture,North,135,2166.63,292495.05,Pending
+2025-04-15,Electronics,Central,107,1702.57,182174.99,Pending
+2025-11-03,Clothing,East,93,37.52,3489.36,Shipped
+2025-05-03,Furniture,Central,19,2080.33,39526.27,Pending
+2025-02-08,Home Appliances,West,142,1284.4,182384.8,Returned
+2025-04-09,Books,West,99,71.46,7074.54,Cancelled
+2025-07-23,Clothing,North,68,184.92,12574.56,Pending
+2025-09-30,Furniture,Central,184,1908.28,351123.52,Delivered
+2025-07-01,Automotive,East,56,266.69,14934.64,Delivered
+2025-06-30,Automotive,North,38,1930.93,73375.34,Pending
+2025-10-10,Books,South,48,51.68,2480.64,Returned
+2025-05-08,Clothing,Central,24,181.53,4356.72,Pending
+2025-10-23,Furniture,East,109,1010.73,110169.57,Shipped
+2025-07-10,Electronics,South,123,1700.05,209106.15,Shipped
+2025-04-27,Home Appliances,Central,46,501.51,23069.46,Delivered
+2025-05-25,Furniture,East,8,2418.38,19347.04,Shipped
+2025-07-12,Furniture,North,187,2862.83,535349.21,Pending
+2025-04-05,Home Appliances,South,116,363.75,42195.0,Returned
+2025-01-22,Books,South,49,37.01,1813.49,Returned
+2025-04-24,Beauty,West,194,62.1,12047.4,Cancelled
+2025-07-01,Furniture,North,10,1313.15,13131.5,Returned
+2025-10-15,Furniture,North,126,2829.31,356493.06,Cancelled
+2025-06-20,Electronics,West,2,1189.25,2378.5,Shipped
+2025-08-04,Sports,South,40,332.28,13291.2,Returned
+2025-10-11,Automotive,Central,175,1700.05,297508.75,Pending
+2025-02-17,Electronics,North,101,1861.83,188044.83,Returned
+2025-12-11,Beauty,Central,59,37.83,2231.97,Delivered
+2025-02-08,Books,North,82,36.8,3017.6,Cancelled
+2025-03-11,Furniture,Central,156,1508.69,235355.64,Shipped
+2025-01-30,Furniture,West,164,1017.97,166947.08,Returned
+2025-09-24,Furniture,East,90,752.76,67748.4,Pending
+2025-05-23,Books,South,139,76.89,10687.71,Pending
+2025-02-18,Furniture,Central,53,979.92,51935.76,Shipped
+2025-03-30,Automotive,North,40,1016.39,40655.6,Delivered
+2025-07-20,Automotive,East,176,1538.84,270835.84,Delivered
+2025-04-03,Home Appliances,South,37,1115.74,41282.38,Returned
+2025-05-21,Home Appliances,South,49,1335.15,65422.35,Delivered
+2025-07-06,Home Appliances,Central,126,500.99,63124.74,Returned
+2025-02-16,Sports,Central,110,231.36,25449.6,Cancelled
+2025-10-12,Sports,South,163,440.72,71837.36,Shipped
+2025-01-21,Home Appliances,East,66,378.41,24975.06,Delivered
+2025-07-14,Books,North,61,27.87,1700.07,Cancelled
+2025-05-30,Home Appliances,East,170,948.41,161229.7,Pending
+2025-02-26,Electronics,East,63,1790.22,112783.86,Delivered
+2025-09-02,Books,South,35,74.26,2599.1,Cancelled
+2025-05-15,Sports,South,193,260.2,50218.6,Shipped
+2025-03-16,Sports,East,115,67.67,7782.05,Shipped
+2025-05-17,Home Appliances,West,151,600.71,90707.21,Returned
+2025-12-31,Books,East,160,41.05,6568.0,Returned
+2025-01-15,Clothing,East,135,47.79,6451.65,Pending
+2025-11-07,Automotive,East,105,734.23,77094.15,Cancelled
+2025-04-01,Clothing,South,159,158.15,25145.85,Delivered
+2025-08-30,Home Appliances,North,44,807.42,35526.48,Delivered
+2025-01-11,Sports,Central,113,489.81,55348.53,Delivered
+2025-04-11,Furniture,West,11,2709.62,29805.82,Pending
+2025-05-07,Clothing,Central,129,102.54,13227.66,Pending
+2025-09-14,Home Appliances,South,141,804.68,113459.88,Returned
+2025-05-28,Clothing,Central,5,151.25,756.25,Shipped
+2025-11-08,Home Appliances,East,30,1289.33,38679.9,Pending
+2025-07-02,Automotive,South,173,1679.29,290517.17,Shipped
+2025-11-29,Sports,North,133,437.57,58196.81,Cancelled
+2025-11-30,Furniture,Central,14,1749.94,24499.16,Pending
+2025-02-28,Home Appliances,West,195,950.08,185265.6,Pending
+2025-03-15,Clothing,North,38,128.38,4878.44,Delivered
+2025-12-07,Home Appliances,South,160,969.95,155192.0,Delivered
+2025-07-11,Home Appliances,South,15,665.14,9977.1,Cancelled
+2025-04-22,Beauty,Central,147,115.41,16965.27,Pending
+2025-10-18,Clothing,West,131,79.89,10465.59,Delivered
+2025-07-28,Books,West,35,49.23,1723.05,Returned
+2025-08-10,Sports,North,126,337.79,42561.54,Shipped
+2025-06-15,Clothing,West,188,102.76,19318.88,Delivered
+2025-09-26,Sports,Central,147,461.81,67886.07,Pending
+2025-04-22,Furniture,Central,108,2346.66,253439.28,Returned
+2025-10-21,Furniture,West,17,928.09,15777.53,Shipped
+2025-11-30,Furniture,Central,28,1235.13,34583.64,Shipped
+2025-01-16,Home Appliances,South,55,1346.94,74081.7,Cancelled
+2025-03-11,Clothing,East,172,160.24,27561.28,Delivered
+2025-12-17,Beauty,Central,182,89.54,16296.28,Returned
+2025-12-18,Furniture,North,102,1377.7,140525.4,Pending
+2025-06-23,Electronics,West,101,867.4,87607.4,Pending
+2025-07-25,Furniture,South,160,1912.31,305969.6,Returned
+2025-07-28,Furniture,Central,19,586.5,11143.5,Cancelled
+2025-10-02,Beauty,East,163,130.95,21344.85,Cancelled
+2025-09-02,Furniture,North,38,1122.75,42664.5,Pending
+2025-06-09,Sports,Central,85,79.54,6760.9,Shipped
+2025-01-11,Furniture,Central,150,588.54,88281.0,Shipped
+2025-12-07,Home Appliances,East,87,360.27,31343.49,Shipped
+2025-07-13,Beauty,East,118,47.5,5605.0,Pending
+2025-02-18,Furniture,Central,47,2514.13,118164.11,Pending
+2025-07-12,Beauty,West,62,119.81,7428.22,Pending
+2025-12-17,Furniture,East,23,2767.06,63642.38,Returned
+2025-09-16,Furniture,Central,177,806.83,142808.91,Shipped
+2025-07-09,Electronics,Central,166,1341.4,222672.4,Shipped
+2025-05-27,Electronics,Central,8,1975.3,15802.4,Pending
+2025-08-31,Sports,Central,99,472.1,46737.9,Pending
+2025-06-18,Furniture,Central,91,784.97,71432.27,Shipped
+2025-06-10,Furniture,Central,3,1139.36,3418.08,Shipped
+2025-07-01,Sports,East,150,459.38,68907.0,Cancelled
+2025-02-22,Home Appliances,South,32,546.57,17490.24,Cancelled
+2025-01-05,Electronics,South,1,1262.51,1262.51,Delivered
+2025-08-26,Books,Central,25,31.11,777.75,Returned
+2025-02-18,Sports,South,200,483.6,96720.0,Shipped
+2025-03-29,Sports,East,39,320.5,12499.5,Pending
+2025-05-10,Beauty,North,14,51.37,719.18,Pending
+2025-04-25,Home Appliances,Central,136,593.96,80778.56,Pending
+2025-07-26,Home Appliances,North,181,633.16,114601.96,Returned
+2025-11-26,Home Appliances,North,82,333.04,27309.28,Shipped
+2025-06-26,Beauty,South,89,81.9,7289.1,Pending
+2025-07-20,Electronics,Central,115,1784.74,205245.1,Returned
+2025-04-01,Electronics,East,159,1282.7,203949.3,Returned
+2025-02-11,Sports,West,2,439.0,878.0,Shipped
+2025-11-23,Books,West,44,30.07,1323.08,Returned
+2025-01-04,Beauty,West,71,49.51,3515.21,Shipped
+2025-09-27,Clothing,North,190,57.75,10972.5,Delivered
+2025-03-14,Home Appliances,Central,176,603.95,106295.2,Returned
+2025-01-27,Clothing,Central,96,143.17,13744.32,Pending
+2025-06-22,Books,East,150,32.93,4939.5,Delivered
+2025-08-08,Beauty,West,114,87.22,9943.08,Shipped
+2025-09-26,Sports,South,191,396.2,75674.2,Returned
+2025-04-02,Sports,West,145,399.12,57872.4,Delivered
+2025-09-21,Clothing,North,21,66.8,1402.8,Delivered
+2025-09-27,Books,Central,106,63.66,6747.96,Pending
+2025-11-24,Books,Central,20,76.2,1524.0,Pending
+2025-11-17,Sports,Central,88,439.62,38686.56,Delivered
+2025-08-22,Sports,South,68,244.04,16594.72,Returned
+2025-03-20,Beauty,West,105,15.41,1618.05,Returned
+2025-10-21,Electronics,East,80,1328.22,106257.6,Cancelled
+2025-02-11,Electronics,West,141,1531.03,215875.23,Cancelled
+2025-03-23,Sports,North,198,279.4,55321.2,Shipped
+2025-09-05,Furniture,Central,186,1477.18,274755.48,Pending
+2025-08-24,Beauty,West,117,60.32,7057.44,Pending
+2025-05-21,Electronics,South,166,1810.73,300581.18,Shipped
+2025-01-08,Furniture,North,37,1114.44,41234.28,Delivered
+2025-06-09,Furniture,East,21,1847.62,38800.02,Shipped
+2025-04-24,Clothing,South,101,53.83,5436.83,Pending
+2025-11-04,Automotive,Central,52,1700.0,88400.0,Shipped
+2025-11-19,Furniture,East,29,333.97,9685.13,Pending
+2025-09-11,Automotive,West,159,1082.04,172044.36,Delivered
+2025-06-04,Sports,Central,33,169.76,5602.08,Shipped
+2025-06-08,Clothing,South,199,43.85,8726.15,Delivered
+2025-12-31,Electronics,South,33,1855.66,61236.78,Shipped
+2025-06-23,Sports,East,150,241.86,36279.0,Delivered
+2025-03-26,Electronics,Central,62,1487.4,92218.8,Pending
+2025-02-04,Home Appliances,East,53,1074.49,56947.97,Pending
+2025-10-20,Electronics,North,34,1364.9,46406.6,Cancelled
+2025-03-22,Automotive,East,127,740.02,93982.54,Shipped
+2025-03-13,Electronics,Central,200,1640.6,328120.0,Returned
+2025-11-28,Sports,North,196,349.97,68594.12,Returned
+2025-03-06,Books,Central,130,48.45,6298.5,Returned
+2025-02-21,Home Appliances,South,28,792.97,22203.16,Returned
+2025-07-20,Beauty,North,194,62.05,12037.7,Delivered
+2025-04-30,Furniture,Central,76,831.36,63183.36,Returned
+2025-01-12,Clothing,East,173,137.73,23827.29,Pending
+2025-07-11,Clothing,Central,95,169.71,16122.45,Cancelled
+2025-10-12,Clothing,West,122,171.66,20942.52,Shipped
+2025-02-24,Beauty,South,45,46.8,2106.0,Delivered
+2025-10-31,Beauty,East,154,142.64,21966.56,Returned
+2025-06-05,Beauty,Central,113,93.46,10560.98,Cancelled
+2025-05-26,Furniture,West,143,2279.3,325939.9,Returned
+2025-10-13,Sports,Central,86,437.23,37601.78,Delivered
+2025-01-16,Sports,East,170,361.53,61460.1,Cancelled
+2025-03-24,Beauty,North,131,107.95,14141.45,Pending
+2025-10-15,Beauty,North,86,25.68,2208.48,Delivered
+2025-08-14,Electronics,North,166,1769.01,293655.66,Delivered
+2025-12-07,Home Appliances,East,160,636.03,101764.8,Returned
+2025-04-08,Furniture,South,45,2521.16,113452.2,Shipped
+2025-12-06,Electronics,East,100,1674.95,167495.0,Shipped
+2025-05-24,Books,East,148,63.08,9335.84,Cancelled
+2025-11-02,Sports,West,185,371.57,68740.45,Shipped
+2025-02-20,Beauty,West,152,115.57,17566.64,Shipped
+2025-05-22,Sports,Central,173,329.44,56993.12,Returned
+2025-10-28,Furniture,South,20,1818.67,36373.4,Delivered
+2025-02-26,Furniture,West,34,2966.68,100867.12,Cancelled
+2025-07-12,Electronics,Central,41,1312.42,53809.22,Returned
+2025-11-04,Home Appliances,Central,66,964.72,63671.52,Delivered
+2025-07-20,Electronics,Central,65,1045.3,67944.5,Shipped
+2025-01-11,Electronics,West,76,1079.67,82054.92,Pending
+2025-08-11,Beauty,East,69,85.58,5905.02,Cancelled
+2025-10-31,Home Appliances,East,104,359.64,37402.56,Shipped
+2025-06-15,Automotive,West,66,544.16,35914.56,Shipped
+2025-08-24,Sports,East,158,72.74,11492.92,Delivered
+2025-07-07,Furniture,East,40,236.92,9476.8,Pending
+2025-02-08,Electronics,South,191,1461.98,279238.18,Cancelled
+2025-07-07,Sports,North,51,459.57,23438.07,Cancelled
+2025-12-12,Home Appliances,South,87,969.4,84337.8,Pending
+2025-03-13,Electronics,South,79,1576.63,124553.77,Returned
+2025-12-15,Home Appliances,East,125,899.99,112498.75,Delivered
+2025-01-16,Clothing,Central,14,81.37,1139.18,Pending
+2025-01-21,Electronics,Central,86,1984.65,170679.9,Pending
+2025-10-25,Furniture,Central,60,1693.5,101610.0,Pending
+2025-10-13,Electronics,South,126,1128.17,142149.42,Pending
+2025-06-29,Sports,West,153,181.96,27839.88,Cancelled
+2025-08-22,Automotive,West,155,518.61,80384.55,Shipped
+2025-08-18,Home Appliances,West,100,369.56,36956.0,Cancelled
+2025-06-16,Furniture,North,170,1667.91,283544.7,Shipped
+2025-07-03,Furniture,West,139,2493.34,346574.26,Pending
+2025-06-05,Electronics,West,171,1518.74,259704.54,Cancelled
+2025-03-22,Automotive,West,112,410.67,45995.04,Returned
+2025-01-17,Home Appliances,West,95,444.92,42267.4,Pending
+2025-02-06,Automotive,East,123,764.22,93999.06,Cancelled
+2025-12-26,Furniture,North,22,2834.07,62349.54,Shipped
+2025-04-29,Electronics,Central,61,1990.63,121428.43,Cancelled
+2025-09-03,Automotive,South,154,851.63,131151.02,Pending
+2025-12-03,Beauty,East,165,145.59,24022.35,Returned
+2025-07-20,Electronics,Central,66,1599.75,105583.5,Cancelled
+2025-08-29,Sports,East,143,463.46,66274.78,Shipped
+2025-08-21,Clothing,South,76,156.02,11857.52,Shipped
+2025-11-30,Automotive,East,123,774.63,95279.49,Cancelled
+2025-06-04,Furniture,West,102,873.61,89108.22,Delivered
+2025-09-23,Clothing,East,102,54.31,5539.62,Cancelled
+2025-01-15,Electronics,South,102,1746.66,178159.32,Shipped
+2025-12-13,Electronics,Central,59,1378.51,81332.09,Shipped
+2025-08-10,Books,East,156,17.52,2733.12,Pending
+2025-09-29,Electronics,East,98,1103.94,108186.12,Pending
+2025-06-20,Books,West,40,20.78,831.2,Returned
+2025-09-07,Electronics,Central,187,1785.54,333895.98,Cancelled
+2025-06-28,Beauty,Central,8,36.11,288.88,Cancelled
+2025-03-28,Clothing,North,48,154.4,7411.2,Delivered
+2025-03-22,Sports,Central,93,269.87,25097.91,Shipped
+2025-10-06,Sports,East,16,243.29,3892.64,Pending
+2025-08-31,Home Appliances,South,136,765.82,104151.52,Shipped
+2025-12-05,Home Appliances,West,72,1246.83,89771.76,Shipped
+2025-03-05,Electronics,Central,11,951.87,10470.57,Cancelled
+2025-10-12,Beauty,North,111,148.62,16496.82,Delivered
+2025-07-30,Furniture,West,109,1202.11,131029.99,Returned
+2025-01-06,Books,East,3,12.29,36.87,Cancelled
+2025-06-22,Sports,East,93,418.6,38929.8,Shipped
+2025-05-05,Clothing,West,133,45.39,6036.87,Delivered
+2025-01-16,Beauty,North,38,91.64,3482.32,Pending
+2025-05-31,Beauty,East,194,17.31,3358.14,Returned
+2025-02-18,Books,Central,170,67.51,11476.7,Cancelled
+2025-11-15,Electronics,West,68,1622.48,110328.64,Delivered
+2025-11-12,Books,West,4,49.34,197.36,Delivered
+2025-02-28,Automotive,East,186,940.7,174970.2,Returned
+2025-04-14,Automotive,North,122,553.91,67577.02,Returned
+2025-08-02,Automotive,North,160,799.89,127982.4,Pending
+2025-08-03,Sports,South,93,358.15,33307.95,Delivered
+2025-11-25,Automotive,West,101,824.04,83228.04,Delivered
+2025-08-19,Sports,West,39,226.2,8821.8,Shipped
+2025-04-26,Home Appliances,North,138,574.02,79214.76,Returned
+2025-11-01,Beauty,South,185,68.86,12739.1,Returned
+2025-09-25,Automotive,North,59,1472.71,86889.89,Cancelled
+2025-01-18,Books,South,106,65.98,6993.88,Cancelled
+2025-02-23,Electronics,Central,141,1190.22,167821.02,Pending
+2025-12-01,Automotive,Central,26,1556.5,40469.0,Cancelled
+2025-04-29,Books,West,167,14.84,2478.28,Returned
+2025-03-18,Clothing,North,40,182.13,7285.2,Shipped
+2025-09-27,Automotive,Central,13,768.47,9990.11,Delivered
+2025-12-16,Beauty,North,58,82.78,4801.24,Returned
+2025-10-26,Books,South,70,28.75,2012.5,Shipped
+2025-09-04,Beauty,East,172,20.88,3591.36,Cancelled
+2025-07-17,Clothing,South,76,30.87,2346.12,Shipped
+2025-04-15,Sports,West,102,316.68,32301.36,Shipped
+2025-01-06,Clothing,South,180,164.15,29547.0,Shipped
+2025-08-17,Furniture,Central,32,2309.37,73899.84,Returned
+2025-03-01,Sports,East,5,388.94,1944.7,Delivered
+2025-06-30,Furniture,East,136,1485.67,202051.12,Pending
+2025-08-29,Books,South,156,28.79,4491.24,Cancelled
+2025-02-07,Beauty,East,53,70.75,3749.75,Pending
+2025-03-02,Home Appliances,East,28,1140.03,31920.84,Cancelled
+2025-05-22,Sports,North,58,465.76,27014.08,Pending
+2025-03-24,Sports,West,15,82.39,1235.85,Cancelled
+2025-07-31,Books,East,21,31.95,670.95,Cancelled
+2025-07-31,Books,East,105,59.88,6287.4,Returned
+2025-12-21,Clothing,North,146,52.56,7673.76,Cancelled
+2025-06-19,Electronics,West,133,1590.12,211485.96,Pending
+2025-07-15,Furniture,South,16,2228.6,35657.6,Cancelled
+2025-04-15,Books,Central,189,54.89,10374.21,Shipped
+2025-11-18,Clothing,East,165,52.2,8613.0,Cancelled
+2025-07-17,Books,North,136,71.14,9675.04,Returned
+2025-08-06,Home Appliances,East,139,1444.25,200750.75,Cancelled
+2025-07-02,Sports,South,188,404.5,76046.0,Returned
+2025-03-26,Automotive,South,82,1959.27,160660.14,Shipped
+2025-10-22,Furniture,Central,39,844.28,32926.92,Cancelled
+2025-06-21,Clothing,North,127,120.91,15355.57,Cancelled
+2025-03-07,Automotive,West,29,812.32,23557.28,Delivered
+2025-01-08,Home Appliances,South,86,1186.64,102051.04,Returned
+2025-08-07,Furniture,West,84,2794.66,234751.44,Cancelled
+2025-04-16,Beauty,North,71,83.9,5956.9,Delivered
+2025-09-07,Electronics,Central,68,851.76,57919.68,Pending
+2025-02-13,Electronics,Central,104,1887.03,196251.12,Shipped
+2025-09-24,Books,South,57,17.55,1000.35,Cancelled
+2025-02-19,Home Appliances,West,19,1273.79,24202.01,Delivered
+2025-09-07,Electronics,North,150,881.27,132190.5,Delivered
+2025-04-28,Beauty,North,4,67.07,268.28,Delivered
+2025-03-17,Sports,Central,130,196.58,25555.4,Cancelled
+2025-03-03,Furniture,Central,150,854.12,128118.0,Pending
+2025-01-06,Sports,North,92,214.94,19774.48,Pending

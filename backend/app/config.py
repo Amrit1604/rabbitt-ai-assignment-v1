@@ -10,6 +10,8 @@ class Settings(BaseSettings):
     # Email (Gmail SMTP with App Password)
     GMAIL_USER: str
     GMAIL_APP_PASSWORD: str
+    # SendGrid API key (fallback)
+    SENDGRID_API_KEY: str | None = None
 
     # Security — used to restrict CORS
     FRONTEND_URL: str = "http://localhost:3000"
