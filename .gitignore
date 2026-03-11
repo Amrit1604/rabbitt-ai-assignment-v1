@@ -6,6 +6,14 @@ todo.md
 .env.local
 .env.*.local
 
+# ── Virtual environments ───────────────────────
+.venv/
+venv/
+env/
+backend/.venv/
+tests/.venv/
+frontend/.venv/
+
 # ── Python ─────────────────────────────────────
 __pycache__/
 *.py[cod]
