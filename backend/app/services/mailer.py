@@ -11,7 +11,7 @@ from app.exceptions import EmailError
 logger = logging.getLogger(__name__)
 
 GMAIL_SMTP_HOST = "smtp.gmail.com"
-GMAIL_SMTP_PORT = 587
+GMAIL_SMTP_PORT = 465
 
 
 def _build_html(summary: str) -> str:
@@ -93,7 +93,7 @@ async def send_summary(
             port=GMAIL_SMTP_PORT,
             username=settings.GMAIL_USER,
             password=settings.GMAIL_APP_PASSWORD,
-            start_tls=True,
+            use_tls=True,
         )
         logger.info("Email dispatched to %s", to)
     except Exception as e:
