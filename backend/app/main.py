@@ -32,7 +32,7 @@ def create_app() -> FastAPI:
         redoc_url="/redoc",
     )
 
-    # --- Rate limiter state ---
+    # added rate limiter , ive reused the limiter instance from analyze.py so it shares state across the app and works properly
     app.state.limiter = limiter
     app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
     app.add_middleware(SlowAPIMiddleware)
@@ -45,13 +45,14 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    # --- Prevent host header injection ---
+# injection no no - security purpose
     app.add_middleware(
         TrustedHostMiddleware,
-        allowed_hosts=["localhost", "127.0.0.1", "*.onrender.com", "*.vercel.app"],
+        # "testserver" is the host FastAPI's TestClient uses — it must be in this list
+        allowed_hosts=["localhost", "127.0.0.1", "testserver", "*.onrender.com", "*.vercel.app"],
     )
 
-    # --- Routes ---
+    # all routes are hereee
     app.include_router(analyze_router)
 
     @app.get("/health", tags=["Health"], summary="Health check")

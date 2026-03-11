@@ -49,8 +49,9 @@ SAMPLE_CSV_BYTES = b"""Date,Product_Category,Region,Units_Sold,Unit_Price,Revenu
 """
 
 # What the parser should extract from the CSV above
+# Revenue: 180000+20250+88000+262500+24000+109250 = 684000
 EXPECTED_STATS = {
-    "total_revenue": 664000.0,
+    "total_revenue": 684000.0,
     "total_units": 640,
     "top_region": "North",
     "top_category": "Electronics",

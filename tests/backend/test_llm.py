@@ -66,9 +66,11 @@ def test_falls_back_to_groq_when_gemini_throws():
     mock_groq_response = MagicMock()
     mock_groq_response.choices = [mock_choice]
 
+    # Must patch at the import location (app.services.llm.Groq), not groq.Groq,
+    # because llm.py already bound the name via `from groq import Groq`
     with patch("google.generativeai.configure"), \
          patch("google.generativeai.GenerativeModel", side_effect=Exception("Gemini quota exceeded")), \
-         patch("groq.Groq") as mock_groq_cls:
+         patch("app.services.llm.Groq") as mock_groq_cls:
         mock_groq_cls.return_value.chat.completions.create.return_value = mock_groq_response
 
         result = generate_summary(SAMPLE_STATS)
@@ -81,7 +83,7 @@ def test_falls_back_to_groq_when_gemini_throws():
 def test_raises_llm_error_when_both_providers_fail():
     with patch("google.generativeai.configure"), \
          patch("google.generativeai.GenerativeModel", side_effect=Exception("Gemini down")), \
-         patch("groq.Groq", side_effect=Exception("Groq also down")):
+         patch("app.services.llm.Groq", side_effect=Exception("Groq also down")):
 
         with pytest.raises(LLMError):
             generate_summary(SAMPLE_STATS)
