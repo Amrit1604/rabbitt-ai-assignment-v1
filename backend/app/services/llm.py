@@ -16,7 +16,7 @@ def _build_prompt(stats: dict[str, Any]) -> str:
     to write a meaningful executive summary — not just bullet points.
     """
     region_lines = "\n".join(
-        f"  - {region}: {rev}" for region, rev in stats["revenue_by_region"].items()
+        f"  - {region}: ${rev:,.0f}" for region, rev in stats["revenue_by_region"].items()
     )
 
     return f"""You are a senior business analyst writing a quarterly sales report for executive leadership.

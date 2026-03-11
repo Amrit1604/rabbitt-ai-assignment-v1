@@ -118,8 +118,10 @@ Response: { message, summary }
 
 | | URL |
 |---|---|
-| Frontend | _Add after deploying to Vercel_ |
-| Backend API / Swagger | _Add after deploying to Render_ |
+| Frontend | https://rabbitt-ai-assignment-v1.vercel.app |
+| Backend API | https://rabbitt-ai-assignment-v1.onrender.com |
+| Swagger Docs | https://rabbitt-ai-assignment-v1.onrender.com/docs |
+| Health Check | https://rabbitt-ai-assignment-v1.onrender.com/health |
 
 ---
 
@@ -147,3 +149,10 @@ A GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every pull reques
 - **Frontend job**: `eslint` + `tsc --noEmit` + `next build`
 
 Both jobs run in parallel. No merge if either fails.
+
+
+
+SOME MINOR ERROR MIGHT HAPPEN BECAUSE BACKEND IS DEPLOYED ON RENDER LOCALLY ITS WORKING PERFECT
+BUT SOMETIMES IT SHOWS ERRORS
+
+ALSO WE DIDNT KNEW THAT FILE SIZE IS BIG OR SMALL FOR BIG SEMANTIC CHUNCKING IS NEED AND FOR SMALL MININAL DATA PROCESSING SHOULD WORK FINE

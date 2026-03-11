@@ -9,13 +9,12 @@ from app.exceptions import FileValidationError
 
 logger = logging.getLogger(__name__)
 
-# Magic bytes that indicate each supported file type
 ALLOWED_MIME_TYPES = {
     "text/plain": "csv",
     "application/csv": "csv",
     "text/csv": "csv",
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "xlsx",
-    "application/zip": "xlsx",  # XLSX files are ZIP-based and sometimes detected as zip
+    "application/zip": "xlsx",  #for zips zzz..
 }
 
 REQUIRED_COLUMNS = {"Revenue", "Region", "Product_Category", "Units_Sold", "Date", "Status"}
@@ -28,14 +27,13 @@ def validate_and_parse(file_bytes: bytes, filename: str) -> dict[str, Any]:
 
     Raises FileValidationError for any bad input.
     """
-    # Check file type via magic bytes — extension alone is not trustworthy
     mime = magic.from_buffer(file_bytes[:2048], mime=True)
     if mime not in ALLOWED_MIME_TYPES:
         raise FileValidationError(
             f"Unsupported file type '{mime}'. Please upload a CSV or XLSX file."
         )
 
-    # Load into a DataFrame based on the detected type
+#loading of dataframes from bytes can be tricky because pandas doesn't natively support file-like objects for all formats, and we also want to handle both CSV and XLSX. The magic library helps us identify the MIME type, but we should also have a fallback based on file extension just in case. We'll try to read the file using pandas with the appropriate engine based on the detected type. If it fails, we'll raise a validation error.
     ext = filename.rsplit(".", 1)[-1].lower() if "." in filename else ""
     try:
         if ext == "xlsx" or mime in (
@@ -77,25 +75,37 @@ def _extract_stats(df: pd.DataFrame) -> dict[str, Any]:
     top_region = df.groupby("Region")["Revenue"].sum().idxmax()
     top_category = df.groupby("Product_Category")["Revenue"].sum().idxmax()
 
-    # Date range (best-effort — ignore if column isn't parseable)
+    # Date range + monthly trend (best-effort — ignore if column isn't parseable)
+    date_range = "Unknown"
+    monthly_revenue: dict[str, float] = {}
     try:
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
         date_range = (
             f"{df['Date'].min().strftime('%B %d, %Y')} – {df['Date'].max().strftime('%B %d, %Y')}"
         )
+        df["YearMonth"] = df["Date"].dt.to_period("M").astype(str)
+        monthly_revenue = (
+            df.groupby("YearMonth")["Revenue"].sum().sort_index().to_dict()
+        )
     except Exception:
-        date_range = "Unknown"
+        pass
 
-    # Status breakdown as a readable string, e.g. "Shipped: 3, Delivered: 2"
     status_counts = df["Status"].value_counts().to_dict()
     status_breakdown = ", ".join(f"{k}: {v}" for k, v in status_counts.items())
+    cancellation_count = int(status_counts.get("Cancelled", 0))
 
-    # Revenue by region for the prompt context
-    revenue_by_region = (
+    # Raw floats — used by chart generator; LLM prompt formats them as strings
+    revenue_by_region: dict[str, float] = (
         df.groupby("Region")["Revenue"]
         .sum()
         .sort_values(ascending=False)
-        .apply(lambda x: f"${x:,.0f}")
+        .to_dict()
+    )
+
+    revenue_by_category: dict[str, float] = (
+        df.groupby("Product_Category")["Revenue"]
+        .sum()
+        .sort_values(ascending=False)
         .to_dict()
     )
 
@@ -106,6 +116,9 @@ def _extract_stats(df: pd.DataFrame) -> dict[str, Any]:
         "top_category": top_category,
         "date_range": date_range,
         "status_breakdown": status_breakdown,
+        "cancellation_count": cancellation_count,
         "revenue_by_region": revenue_by_region,
+        "revenue_by_category": revenue_by_category,
+        "monthly_revenue": monthly_revenue,
         "row_count": len(df),
     }

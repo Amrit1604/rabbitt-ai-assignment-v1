@@ -1,4 +1,5 @@
 import logging
+from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -55,23 +56,35 @@ def _build_html(summary: str) -> str:
 </html>"""
 
 
-async def send_summary(to: str, summary: str) -> None:
+async def send_summary(
+    to: str,
+    summary: str,
+    charts: dict[str, bytes] | None = None,
+) -> None:
     """
     Send the AI-generated summary as an HTML email via Gmail SMTP (STARTTLS).
+    Attaches PNG charts when provided.
     Raises EmailError on any delivery failure so the caller can surface it cleanly.
     """
     settings = get_settings()
 
-    message = MIMEMultipart("alternative")
-    message["Subject"] = "Your Q1 2026 Sales Insight Report"
+    message = MIMEMultipart("mixed")
+    message["Subject"] = "Your Sales Insight Report — Rabbitt AI"
     message["From"] = f"Rabbitt AI <{settings.GMAIL_USER}>"
     message["To"] = to
 
-    # Plain-text fallback for email clients that don't render HTML
-    plain_text = MIMEText(summary, "plain")
-    html_part = MIMEText(_build_html(summary), "html")
-    message.attach(plain_text)
-    message.attach(html_part)
+    # Plain-text fallback + HTML body
+    alt_part = MIMEMultipart("alternative")
+    alt_part.attach(MIMEText(summary, "plain"))
+    alt_part.attach(MIMEText(_build_html(summary), "html"))
+    message.attach(alt_part)
+
+    # Attach charts as PNG files
+    if charts:
+        for filename, chart_bytes in charts.items():
+            img = MIMEImage(chart_bytes, name=filename)
+            img.add_header("Content-Disposition", "attachment", filename=filename)
+            message.attach(img)
 
     try:
         await aiosmtplib.send(

@@ -21,6 +21,9 @@ pydantic[email]==2.10.4
 # Rate limiting
 slowapi==0.1.9
 
+# Visualization
+matplotlib==3.9.4
+
 # File type detection (magic bytes)
 # python-magic works on Linux (Docker); Windows devs can use python-magic-bin locally
 python-magic==0.4.27
