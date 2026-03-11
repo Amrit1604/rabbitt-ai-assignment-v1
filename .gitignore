@@ -1,12 +1,16 @@
+# ── Project specific ──────────────────────────
 todo.md
 
-# Environment — never commit real secrets
+# ── Secrets — NEVER commit the real .env ──────
 .env
+.env.local
+.env.*.local
 
-# Python
+# ── Python ─────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -15,18 +19,34 @@ dist/
 build/
 venv/
 .venv/
+env/
 
-# Node / Next.js
+# ── Node / Next.js ─────────────────────────────
 node_modules/
 .next/
 out/
+.npm/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS
+# ── Docker ─────────────────────────────────────
+# Keep Dockerfiles tracked; ignore local override files
+docker-compose.override.yml
+
+# ── OS ─────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Editor
+# ── Editor ─────────────────────────────────────
 .idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs ───────────────────────────────────────
+*.log
+logs/
 .vscode/
 *.swp
