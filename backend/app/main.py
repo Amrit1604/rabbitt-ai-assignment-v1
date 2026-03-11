@@ -38,9 +38,11 @@ def create_app() -> FastAPI:
     app.add_middleware(SlowAPIMiddleware)
 
     # --- CORS: only allow requests from the configured frontend URL ---
+    # Strip trailing slash to avoid mismatch (e.g. "https://x.vercel.app/" vs "https://x.vercel.app")
+    frontend_origin = settings.FRONTEND_URL.rstrip("/")
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[settings.FRONTEND_URL],
+        allow_origins=[frontend_origin],
         allow_methods=["POST", "GET"],
         allow_headers=["*"],
     )
