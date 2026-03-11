@@ -2,6 +2,27 @@
 
 Upload a CSV or XLSX sales file — get an AI-generated executive summary delivered straight to your inbox. Built with FastAPI, Next.js, Gemini, and Gmail SMTP.
 
+> ✅ **Fully working locally** — end-to-end flow confirmed: upload → AI summary → HTML email with 3 chart attachments delivered in seconds.
+
+---
+
+## Screenshots
+
+### Main Interface
+![Main Interface](docs/screenshots/image.png)
+
+### Upload & AI Summary Preview
+![UI Success](docs/screenshots/ui-success.png)
+
+### Email Delivered to Inbox
+![Email Received](docs/screenshots/email-received.png)
+
+### Charts Attached to Email
+
+| Revenue by Region | Revenue by Product Category | Monthly Revenue Trend |
+|---|---|---|
+| ![Region](docs/screenshots/chart-region.png) | ![Category](docs/screenshots/chart-category.png) | ![Trend](docs/screenshots/chart-trend.png) |
+
 ---
 
 ## Quick Start (Docker)
